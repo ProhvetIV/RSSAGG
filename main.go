@@ -11,7 +11,7 @@ import (
 func main() {
 	fmt.Println("Project starts here")
 
-	godotenv.Load(".env")
+	godotenv.Load()
 
 	portString := os.Getenv("PORT")
 	if portString == "" {
